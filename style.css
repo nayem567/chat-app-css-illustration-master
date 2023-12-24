@@ -3,7 +3,77 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0.1px solid #000;
 }
 
-/* Mobile First */
+/* Mobile Design First */
+/* Mobile Design First */
+/* Mobile Design First */
+
+
+/* Mobile Header */
+.mobile{
+    max-width: 360px;
+    border: 1px solid gray;
+    background-color: antiquewhite;
+    padding: 1rem;
+    margin: 0 auto;
+}
+.mobile_header{
+    background-color: burlywood;
+    display: flex;
+    padding: 1rem;
+    gap: .8rem;
+    border-radius: 1rem 1rem .5rem .5rem;
+}
+.big_text{
+    font-weight: bold;
+}
+.small_text{
+    font-size: .6rem;
+}
+.person_image{
+    align-self: center;
+    display: flex;
+}
+.person_image img{
+    border-radius: 50%;
+}
+.person_details{
+    flex-grow: 1;
+}
+.person_nav{
+    align-self: center;
+}
+
+/* Mobile Chat */
+
+.mobile_chat{
+    background-color: cadetblue;
+    padding: 1rem;
+    font-size: .9rem;
+}
+.mobile p{
+    margin: .4rem 0;
+}
+
+.chat_1{
+    max-width: 60%;
+}
+
+.chat_2_container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chat_2{
+    max-width: 60%;
+}
+
+
+
+
+
+
+
 
