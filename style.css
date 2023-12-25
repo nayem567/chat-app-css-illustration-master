@@ -3,22 +3,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 0.1px solid transparent;
 }
 body{
   font-family: 'Rubik', sans-serif;
-  /* background-color:  hsl(264, 100%, 60%);  */
-    
+  background-color: hsl(270, 20%, 96%);  
 }
 
 .container{
     max-width: 520px;
     margin: 0 auto;
-    background-color: hsl(264, 100%, 61%);
-    background-color: hsl(270, 20%, 96%);
 }
 
+/* Making SVG like object to the body, purple  */
 
+.container::before{
+    content: "";
+    width: 10rem;
+    height: 32rem;
+    background-image: linear-gradient( 90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    position: absolute;
+    top: 0;
+    border-bottom-right-radius: 20rem;
+    z-index: -1;
+}
 
 /* Mobile Design First */
 /* Mobile Design First */
@@ -27,12 +34,13 @@ body{
 
 /* Mobile Header */
 .mobile{
-    max-width: 375px;
-    padding: .8rem;
+    max-width: 320px;
+    padding: 1rem;
     margin: 0 auto;
     background-color:  #fff;
     border-radius: 1.2rem;
     margin: 5rem auto 0 auto;
+    z-index: 2;
 }
 .mobile_header{
     margin-bottom: -.4rem;
@@ -43,6 +51,7 @@ body{
     border-radius: 1rem 1rem .5rem .5rem;
     color: #fff;
 }
+
 .big_text{
     font-weight: bold;
 }
@@ -67,11 +76,13 @@ body{
 
 .mobile_chat{
     background-color: hsl(300, 100%, 96%);
-    padding: 1rem;
-    font-size: .9rem;
+    padding: 1.4rem 1rem;
+    font-size: .7rem;
     border-radius: 1.2rem;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+    z-index: 2;
+    position: relative;
 }
 .mobile .mobile_chat p{
     margin: .4rem 0;
@@ -141,7 +152,7 @@ body{
 }
 
 .dollars_text{
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 /* Send A message */
@@ -158,12 +169,14 @@ input[type="text"]{
     width: 100%;
     border-radius: 1rem;
     padding-left: 1rem;
+    border: 0;
 }
 
 input[type="text"]::placeholder{
     padding-left: 1rem;
     text-indent: 10px;
     text-align: left;
+
 }
 
 button{
@@ -176,6 +189,7 @@ button{
     margin-top: .3rem;
     margin-bottom: .3rem;
     cursor: pointer;
+    border: 0;
 }
 
 .mobile_footer{
@@ -192,6 +206,7 @@ button{
 .mobile_footer p{
     padding: 0 4rem;
     color: hsl(270, 7%, 60%);
+    font-size: .9rem;
 }
 
 /*  */
@@ -199,9 +214,12 @@ button{
     font-size: .8rem;
     background-color: hsl(264, 100%, 60%);
     color: #fff;
-    padding: 1rem 0;
+    padding: .4rem 0 0 0;
     text-align: center;
    
+}
+.attribution p{
+    padding: .4rem 0;
 }
 .attribution a{
     all:unset; 
@@ -214,6 +232,9 @@ button{
     max-width: 50%;
     margin: 0 auto;
 }
+
+
+/* MOBILE DONE */
 
 
 
