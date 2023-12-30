@@ -15,6 +15,7 @@ body{
 }
 
 /* Making SVG like object to the body, purple  */
+
 .container::before{
     content: "";
     width: 10rem;
@@ -100,13 +101,14 @@ body{
     justify-content: flex-end;
 }
 .chat_2{
-    max-width: 60%;
+    display: flex;
     margin: .5rem 0;
+    flex-direction: column;
     color: hsl(271, 15%, 43%);
 }
 .chat_2_img{
     display: flex;
-    margin: 0 0 0 -2rem;
+    align-self: flex-end;
 }
 .chat_2 img{
     max-width: 100%;
@@ -115,6 +117,8 @@ body{
 }
 .chat_2 p{
     background-color: #fff;
+    max-width: 60%;
+    align-self: flex-end;
 }
 .chat_3{
     max-width: 70%;
